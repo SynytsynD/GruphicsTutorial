@@ -15,7 +15,13 @@
 struct global_state
 {
 	HWND WindowHandle;
-	bool isRuning;
+	bool IsRuning;
+	HDC DeviceContext;
+	int FrameBufferWidth;
+	int FramtBufferHeight;
+	int* FrameBufferPixels;
+
+	double CurrOffset;
 };
 
 #endif // !WIN32_GRAPHICS_H
