@@ -11,17 +11,20 @@
 
 #define Assert(Expression) if (!(Expression)) {__debugbreak();} 
 #define InvalidCodePath Assert(!"Invalid Code Path")
+#define ArrayCount(Array) (sizeof(Array) / sizeof((Array)[0]))
+
+#include "graphics_math.h"
 
 struct global_state
 {
 	HWND WindowHandle;
 	bool IsRuning;
 	HDC DeviceContext;
-	int FrameBufferWidth;
+	int FrameBufferWidth;	
 	int FramtBufferHeight;
-	int* FrameBufferPixels;
+	int* FrameBufferPixels;	
 
-	double CurrOffset;
+	float CurrAngle;
 };
 
 #endif // !WIN32_GRAPHICS_H

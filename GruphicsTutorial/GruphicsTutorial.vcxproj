@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="graphic_math.cpp" />
     <ClCompile Include="win32_gruphics_tutorial.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="graphics_math.h" />
     <ClInclude Include="win32_graphics.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
