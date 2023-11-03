@@ -17,6 +17,14 @@ v2 V2 (double X, double Y)
 	return Result;
 }
 
+v2 operator- (v2 A, v2 B)
+{
+	v2 Result = {};
+	Result.x = A.x - B.x;
+	Result.y = A.y - B.y;
+	return Result;
+}
+
 v2 operator+ (v2 A, v2 B)
 {
 	v2 Result = {};
