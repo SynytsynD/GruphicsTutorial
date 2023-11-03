@@ -6,6 +6,7 @@ union v2;
 union v3; 
 v2 V2(double X, double Y);
 v2 V2(double Arg);
+v2 operator- (v2 A, v2 B);
 v2 operator+ (v2 A, v2 B);
 v2 operator* (v2 A, v2 B);
 v2 operator* (double A, v2 B);
